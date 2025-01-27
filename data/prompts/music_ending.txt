@@ -1,0 +1,6 @@
+Create a **soft and satisfying ending theme** for a children's story set in {setting}, a {setting_description}.  
+Use **{instruments}** to match the mood of the story's conclusion.  
+
+- The melody should feel **calm and heartwarming**, bringing a sense of closure.  
+- Instruments should create a **gentle, peaceful atmosphere**, leaving listeners with a sense of wonder.  
+- The tempo should be **soothing and steady**, wrapping up the story on a comforting note.

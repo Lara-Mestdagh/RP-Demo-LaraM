@@ -1,0 +1,6 @@
+Generate a transition music clip for a children's story set in {setting}, a {setting_description}.  
+Use **{instruments}** to maintain cohesion.  
+
+- The music should feel **exciting and adventurous**, building anticipation.  
+- Instruments should reflect a **sense of wonder and momentum**, leading toward the resolution.  
+- The melody should add **emotional depth** while staying light and engaging.

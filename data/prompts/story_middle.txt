@@ -1,0 +1,16 @@
+Continue the story with a **fun and exciting middle** section.  
+Use **short, clear sentences** but **add small moments** to keep it interesting for children aged 5 to 8.  
+
+**Summary of Beginning**:  
+{beginning}  
+
+The middle should:
+1. Show how the characters **try to solve the problem** in a fun and engaging way.
+2. Include **one big challenge** or obstacle—but **let the characters react in multiple steps**.
+3. Keep the theme simple and clear: {theme}.
+4. Use **small moments to build curiosity**—short descriptions, fun reactions, or playful interactions.
+5. Let the characters **talk and interact**—small conversations, questions, or funny moments.
+6. Keep the story **easy to follow** but **gradually increase excitement** leading to the ending.  
+
+**If possible, let the characters explore or experience one extra small event before reaching the ending.**  
+I only want story text in the response, nothing else.

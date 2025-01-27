@@ -1,0 +1,17 @@
+MusicGen - Simple and Controllable Music Generation
+Developed by: The FAIR team of Meta AI
+Model Date: Trained between April 2023 and May 2023
+Model Version: v1
+
+License:
+- Code: MIT License
+- Model Weights: CC-BY-NC 4.0 License
+
+Citation:
+Copet, J., Kreuk, F., Gat, I., Remez, T., & Kant, D. (2023). 
+Simple and Controllable Music Generation. arXiv preprint arXiv:2306.05284.
+
+More Information:
+GitHub Repository: https://github.com/facebookresearch/audiocraft
+Paper: https://arxiv.org/abs/2306.05284
+Hugging Face Model: https://huggingface.co/facebook/musicgen-small

@@ -1,0 +1,244 @@
+{
+    "settings": {
+        "Magical Forest": {
+            "description": "A bright and colorful forest with tall trees that sparkle with magic. Animals and fairies live here, and many secrets are hidden among the leaves and flowers.",
+            "compatible_characters": ["Fairy", "Talking Animal", "Woodland Elf", "Tree Guardian", "Adventurer", "Animal Companion", "Magician"],
+            "icon": "🌳"
+        },
+        "Small Kingdom": {
+            "description": "A busy and happy kingdom with a big castle and small houses. There are knights, royals, and villagers all going about their day. Adventures often begin here!",
+            "compatible_characters": ["Prince/Princess", "Knight", "Village Child", "Wizard", "Adventurer", "Wandering Merchant", "Magician"],
+            "icon": "🏰"
+        },
+        "Desert Oasis": {
+            "description": "A hot and sandy land with golden dunes and hidden pools of water. Travelers and magical creatures like genies can be found here, searching for treasures or shade.",
+            "compatible_characters": ["Nomad", "Genie", "Sand Sprite", "Camel Companion", "Adventurer", "Wandering Merchant"],
+            "icon": "🏜️"
+        },
+        "Underwater World": {
+            "description": "A beautiful place under the sea, full of colorful fish, shiny treasures, and magic. Mermaids and friendly sea creatures live here, exploring coral reefs and sunken ships.",
+            "compatible_characters": ["Mermaid/Merman", "Octopus Inventor", "Sea Turtle Elder", "Fish Friend"],
+            "icon": "🌊"
+        },
+        "Flower Meadow": {
+            "description": "A sunny field full of bright flowers and fluttering butterflies. It's peaceful and happy, and little animals love to play here.",
+            "compatible_characters": ["Butterfly Sprite", "Fairy", "Meadow Fawn", "Talking Animal", "Animal Companion"],
+            "icon": "🌼"
+        },
+        "Snowy Land": {
+            "description": "A cold and snowy place where everything sparkles like crystals. Snowmen, polar bears, and other animals live here and have fun in the icy fields.",
+            "compatible_characters": ["Snowman", "Polar Bear Cub", "Ice Wizard", "Penguin Explorer", "Adventurer", "Animal Companion"],
+            "icon": "❄️"
+        },
+        "Sky Island": {
+            "description": "A magical island that floats high above the clouds. Birds fly here, and there are airships and cloud creatures that make this place full of wonder.",
+            "compatible_characters": ["Cloud Sprite", "Sky Captain", "Bird Guardian", "Adventurer", "Wandering Merchant", "Magician"],
+            "icon": "🎈"
+        },
+        "Crystal Cave": {
+            "description": "A shiny cave with glowing crystals and hidden tunnels. Tiny mice, crystal guardians, and magical creatures live here, protecting the sparkling treasures.",
+            "compatible_characters": ["Crystal Golem", "Miner Mouse", "Fairy", "Gem Dragon", "Wandering Merchant", "Magician"],
+            "icon": "💎"
+        }
+    },
+    "characters": {
+        "Fairy": {
+            "description": "A tiny magical person with wings who loves helping others and protecting the forest.",
+            "settings": ["forest"],
+            "icon": "🧚"
+        },
+        "Talking Animal": {
+            "description": "A wise or funny animal that can talk and loves to share stories or advice.",
+            "settings": ["forest", "meadow"],
+            "icon": "🦊"
+        },
+        "Woodland Elf": {
+            "description": "A kind and clever elf who takes care of the trees and animals in the forest.",
+            "settings": ["forest"],
+            "icon": "🧝"
+        },
+        "Tree Guardian": {
+            "description": "A large and gentle creature who watches over the forest and keeps it safe.",
+            "settings": ["forest"],
+            "icon": "🌲"
+        },
+        "Prince/Princess": {
+            "description": "A royal person who is curious and brave, always looking for new adventures.",
+            "settings": ["kingdom"],
+            "icon": "🫅"
+        },
+        "Knight": {
+            "description": "A brave hero who protects others and goes on exciting quests in the kingdom.",
+            "settings": ["kingdom"],
+            "icon": "🛡️"
+        },
+        "Village Child": {
+            "description": "A playful and curious child who loves exploring and finding new adventures in the village.",
+            "settings": ["kingdom"],
+            "icon": "🧒"
+        },
+        "Wizard": {
+            "description": "A wise and magical person who can cast spells and help solve problems.",
+            "settings": ["kingdom", "forest", "cave", "sky"],
+            "icon": "🧙‍♂️"
+        },
+        "Nomad": {
+            "description": "A traveler who knows all the secrets of the desert and loves to explore.",
+            "settings": ["desert"],
+            "icon": "👨"
+        },
+        "Genie": {
+            "description": "A magical being who grants wishes but sometimes adds a fun twist.",
+            "settings": ["desert"],
+            "icon": "🧞"
+        },
+        "Sand Sprite": {
+            "description": "A playful creature made of sand that dances in the desert winds.",
+            "settings": ["desert"],
+            "icon": "⌛"
+        },
+        "Camel Companion": {
+            "description": "A loyal and gentle friend who helps travelers cross the desert.",
+            "settings": ["desert"],
+            "icon": "🐪"
+        },
+        "Mermaid/Merman": {
+            "description": "A magical person who lives underwater and loves to explore coral reefs and sunken ships.",
+            "settings": ["underwater"],
+            "icon": "🧜‍♀️"
+        },
+        "Octopus Inventor": {
+            "description": "A clever sea creature who creates gadgets and tools from shells and coral.",
+            "settings": ["underwater"],
+            "icon": "🧜‍♀️"
+        },
+        "Sea Turtle Elder": {
+            "description": "A wise and slow-moving turtle who shares stories about the ocean's secrets.",
+            "settings": ["underwater"],
+            "icon": "🐢"
+        },
+        "Fish Friend": {
+            "description": "A tiny and cheerful fish who loves to help others in the underwater world.",
+            "settings": ["underwater"],
+            "icon": "🐠"
+        },
+        "Butterfly Sprite": {
+            "description": "A fluttering and happy creature that brings joy wherever it goes.",
+            "settings": ["meadow"],
+            "icon": "🦋"
+        },
+        "Meadow Fawn": {
+            "description": "A playful young deer that loves exploring the meadow and making friends.",
+            "settings": ["meadow"],
+            "icon": "🦌"
+        },
+        "Snowman": {
+            "description": "A friendly and jolly snowman who loves playing in the snow.",
+            "settings": ["snowy"],
+            "icon": "☃️"
+        },
+        "Polar Bear Cub": {
+            "description": "A curious young bear that enjoys snowy adventures.",
+            "settings": ["snowy"],
+            "icon": "🐻‍❄️"
+        },
+        "Ice Wizard": {
+            "description": "A magical person who controls snow and ice, helping or challenging others in snowy lands.",
+            "settings": ["snowy"],
+            "icon": "🧙🏻‍♂️"
+        },
+        "Penguin Explorer": {
+            "description": "A brave penguin who loves discovering new snowy places.",
+            "settings": ["snowy"],
+            "icon": "🐧"
+        },
+        "Cloud Sprite": {
+            "description": "A tiny, fluffy creature made of clouds who guides travelers in the sky.",
+            "settings": ["sky"],
+            "icon": "☁️"
+        },
+        "Sky Captain": {
+            "description": "A daring pilot who flies an airship through the floating islands.",
+            "settings": ["sky"],
+            "icon": "👨‍✈️"
+        },
+        "Bird Guardian": {
+            "description": "A majestic bird who watches over the sky islands.",
+            "settings": ["sky"],
+            "icon": "🐦"
+        },
+        "Crystal Golem": {
+            "description": "A glowing, magical creature that protects the shiny treasures in the cave.",
+            "settings": ["cave"],
+            "icon": "🪨"
+        },
+        "Miner Mouse": {
+            "description": "A hardworking little mouse who digs for shiny crystals.",
+            "settings": ["cave"],
+            "icon": "🐁"
+        },
+        "Gem Dragon": {
+            "description": "A tiny dragon that loves the sparkling crystals in the cave.",
+            "settings": ["cave"],
+            "icon": "🐉"
+        },
+        "Adventurer": {
+            "description": "A brave explorer who loves discovering new places and solving mysteries.",
+            "settings": ["forest", "kingdom", "desert", "snowy", "sky"],
+            "icon": "🤸‍♂️"
+        },
+        "Animal Companion": {
+            "description": "A loyal and friendly animal who stays by the hero's side and helps them.",
+            "settings": ["forest", "meadow", "snowy", "sky"],
+            "icon": "🐂"
+        },
+        "Wandering Merchant": {
+            "description": "A traveler who sells rare treasures and shares exciting stories.",
+            "settings": ["kingdom", "desert", "cave", "sky"],
+            "icon": "💰"
+        },
+        "Magician": {
+            "description": "A mysterious person who uses magic to help or challenge the hero.",
+            "settings": ["forest", "kingdom", "cave", "sky"],
+            "icon": "🧙"
+        }
+    },
+    "themes": {
+        "love": {
+            "description": "Stories about caring for others and showing kindness.",
+            "icon": "❤️"
+        },
+        "friendship": {
+            "description": "Adventures about working together and being good friends.",
+            "icon": "💚"
+        },
+        "adventure": {
+            "description": "Exciting stories about exploring new places and solving problems.",
+            "icon": "👣"
+        },
+        "mystery": {
+            "description": "Fun stories about finding clues and solving puzzles.",
+            "icon": "🕵️"
+        },
+        "kindness": {
+            "description": "Tales about being helpful and thoughtful to others.",
+            "icon": "👫"
+        },
+        "teamwork": {
+            "description": "Adventures where everyone works together to succeed.",
+            "icon": "🥇"
+        },
+        "family": {
+            "description": "Stories about the love and support of family members.",
+            "icon": "👪"
+        },
+        "sharing": {
+            "description": "Tales about the joy of sharing things with others.",
+            "icon": "🤝"
+        },
+        "learning": {
+            "description": "Stories about discovering new things and having fun while learning.",
+            "icon": "🧠"
+        }
+    }
+}

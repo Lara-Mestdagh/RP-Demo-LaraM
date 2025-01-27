@@ -1,0 +1,6 @@
+Generate a short transition music clip for a children's story set in {setting}, a {setting_description}.  
+Use **{instruments}** to maintain consistency with the introduction.  
+
+- The melody should feel **playful and energetic**, signaling the start of an adventure.  
+- Instruments should create a **smooth and engaging atmosphere**, keeping the mood uplifting.  
+- The tempo should be **slightly faster than the introduction**, adding movement to the story.

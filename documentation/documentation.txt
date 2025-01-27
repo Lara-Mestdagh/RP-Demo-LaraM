@@ -1,0 +1,60 @@
+AI Storytelling Application Documentation
+1. Introduction
+This project is an AI-powered storytelling application that allows users to generate and narrate customized children's stories. 
+The application follows a structured workflow to ensure high-quality stories, engaging narration, and fitting background music.
+
+2. Metadata Selection
+The user selects a setting, which determines the available characters.
+Characters are chosen based on the setting (e.g., no mermaids in the desert).
+Themes are independent of settings and characters.
+This ensures logical and cohesive stories.
+
+3. Story Generation
+Model Used: Ollama with Llama 3.1 8B.
+Reason: Llama 3.1 balances fast inference time with high story quality.
+Other Tested Models:
+Phi 4 – Excellent coherence but slightly slower.
+Qwen 2.5 – High creativity but sometimes verbose.
+Improving Story Length & Structure
+Initial generations were too short, so a 3-act structure was implemented.
+Three separate prompts guide the story’s beginning, middle, and end.
+Each section includes previous responses as context to improve length, suspense, and character growth.
+
+4. Story Validation
+Before narration, each story undergoes validation to ensure:
+Readability – Checked using Flesch-Kincaid readability scores.
+Word Count – Ensures stories meet the required length.
+Content Filtering – Detects and removes any prohibited words.
+If validation fails, the story is automatically regenerated.
+
+5. Narration (Text-to-Speech)
+TTS Model: MeloTTS (used via a Docker API).
+Why MeloTTS? Fast inference with high voice quality.
+The three story parts (beginning, middle, and end) are narrated separately.
+
+6. Music Generation
+Model Used: MusicGen-small from Facebook.
+Custom Prompts: Music is generated based on the setting and description.
+Instrument Consistency: A predefined instrument list per setting ensures cohesion in generated music.
+Music Placement
+Four short instrumental clips (3 seconds each) are generated:
+Opening Theme – Introduces the atmosphere.
+Transition 1 – Between beginning and middle.
+Transition 2 – Between middle and end.
+Ending Theme – Closes the story on a memorable note.
+
+7. Audio Processing & Combination
+Challenge: Different sample rates in generated audio files caused artifacts.
+Solution: Upscaled music to 44.1 kHz to match the TTS sample rate.
+The final narration and music files are then combined in sequence for smooth playback.
+
+8. Gradio Interface
+A user-friendly Gradio app lets users:
+Select metadata (setting, characters, theme).
+Generate and validate a story.
+Listen to the complete narrated story with background music.
+The interface also provides error messages if required inputs are missing.
+
+9. Conclusion
+This project successfully integrates AI-generated stories, high-quality TTS narration, and dynamic music into a cohesive, 
+engaging experience for children. Further improvements could include multiple voice options or longer music clips.

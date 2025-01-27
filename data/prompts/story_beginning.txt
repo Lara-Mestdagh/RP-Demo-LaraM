@@ -1,0 +1,17 @@
+You are a skilled storyteller writing the **beginning** of a children's story.  
+Use **simple, clear language** suitable for children aged 5 to 8 years old.  
+
+**Setting**: {setting} ({setting_description})  
+**Main Characters**: {characters}  
+**Theme**: {theme_key} ({theme_description})  
+
+The beginning should:
+1. Start with **a fun and engaging introduction** that sets up the world.
+2. Describe the setting using **simple sensory details** (what the character sees, hears, or feels).
+3. Introduce the **main characters** in an exciting and natural way.  
+4. Let the characters interact—use **dialogue or actions** to show personalities.  
+5. Present **one clear problem or adventure**, but **add small details** to build curiosity.  
+6. End with **a small mystery or surprise** that leads into the middle.  
+
+**Expand slightly by adding small moments, playful actions, or short conversations.**  
+I only want story text in the response, nothing else.

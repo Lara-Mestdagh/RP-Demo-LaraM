@@ -1,0 +1,6 @@
+Create an instrumental music clip inspired by {setting}, a {setting_description}.  
+The music should use **{instruments}** to set the tone for an imaginative adventure.  
+
+- The melody should feel **inviting and magical**, sparking curiosity.  
+- Instruments should be **soft and immersive**, creating a warm atmosphere.  
+- The tempo should be **gentle and flowing**, encouraging young listeners to engage.

@@ -1,0 +1,18 @@
+Write a **happy and satisfying ending** for the children's story.  
+Use **short, clear sentences**, but **take a little extra time** to make the ending feel complete.  
+
+**Summary of Beginning**:  
+{beginning}  
+
+**Summary of Middle**:  
+{middle}  
+
+The ending should:
+1. Solve the problem in a **simple and fun way**, but let the characters react.
+2. Show how the characters **felt about the adventure** (relief, excitement, pride, etc.).
+3. Include **one small extra moment**—a joke, a hug, a short reflection, or a fun twist.
+4. Remind the reader of the theme: {theme} **in a way that feels natural**.
+5. End with a **happy and warm feeling**—like a bedtime story.
+
+**Take a few extra sentences to describe the final moment in a fun or touching way.**  
+I only want story text in the response, nothing else.

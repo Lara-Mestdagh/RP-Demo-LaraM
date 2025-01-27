@@ -1,0 +1,6 @@
+
+# Ignore these folders
+generated
+tests
+.gradio
+__pycache__

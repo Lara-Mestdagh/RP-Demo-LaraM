@@ -1,0 +1,17 @@
+# Core dependencies
+numpy
+scipy
+torch
+transformers
+librosa
+soundfile
+
+# Web framework for the UI
+gradio
+
+# TTS & Music Generation
+textstat
+requests
+
+# Logging & Utilities
+logging
