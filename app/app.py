@@ -182,4 +182,4 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     gr.File(value=LICENSE_MUSIC, label="Download Facebook MusicGen License")
 
 # Launch Gradio app
-demo.launch(share=True, inbrowser=True)
+demo.launch(share=False, inbrowser=True)

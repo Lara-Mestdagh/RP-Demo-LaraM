@@ -3,6 +3,7 @@ import torch
 import logging
 import librosa
 import numpy as np
+import time
 import scipy.io.wavfile as wavfile
 from transformers import AutoProcessor, MusicgenForConditionalGeneration
 from datetime import datetime
@@ -126,47 +127,59 @@ def generate_music(setting_key, setting_description):
     # Dictionary to store file paths of successfully generated music clips
     music_clips = {}
 
+    # Maximum attempts for music generation
+    MAX_MUSIC_ATTEMPTS = 3
+
     # Generate music clips for each section (beginning, transitions, ending)
     for key, prompt_template in PROMPTS.items():
-        try:
-            # Format the prompt using story metadata
-            prompt_text = prompt_template.format(
-                setting=setting_key,
-                setting_description=setting_description,
-                instruments=instruments_str
-            )
-            logging.debug(f"Generating {key} music. Prompt: {prompt_text[:25]}...")
-
-            # Prepare inputs for the MusicGen model
-            inputs = processor(text=[prompt_text], padding=True, return_tensors="pt")
-
-            # Generate audio using the MusicGen model
-            with torch.no_grad():
-                audio_values = model.generate(
-                    **inputs,
-                    do_sample=True,  # Enable sampling for variability
-                    guidance_scale=3,  # Controls how closely output follows the prompt
-                    max_new_tokens=100  # Limits the length of generated audio
+        for attempt in range(MAX_MUSIC_ATTEMPTS):
+            try:
+                # Format the prompt using story metadata
+                prompt_text = prompt_template.format(
+                    setting=setting_key,
+                    setting_description=setting_description,
+                    instruments=instruments_str
                 )
+                logging.info(f"Attempt {attempt+1} / {MAX_MUSIC_ATTEMPTS} for {key} music.")
 
-            # Convert audio tensor to NumPy array
-            audio_array = audio_values.cpu().numpy().astype(np.float32)
+                # Prepare inputs for the MusicGen model
+                inputs = processor(text=[prompt_text], padding=True, return_tensors="pt")
 
-            # Define the file path for the generated music
-            music_path = os.path.join(MUSIC_DIR, f"music_{key}_{timestamp}.wav")
+                # Generate audio using the MusicGen model
+                with torch.no_grad():
+                    audio_values = model.generate(
+                        **inputs,
+                        do_sample=True,  # Enable sampling for variability
+                        guidance_scale=3,  # Controls how closely output follows the prompt
+                        max_new_tokens=100  # Limits the length of generated audio
+                    )
 
-            # Save the generated music as a WAV file with a 32 kHz sample rate
-            wavfile.write(music_path, EXPECTED_SR, audio_array)
+                # Convert audio tensor to NumPy array
+                audio_array = audio_values.cpu().numpy().astype(np.float32)
 
-            # Validate the generated music clip before adding it to the output list
-            if validate_music_clip(music_path):
-                music_clips[key] = music_path
-                logging.info(f"✅ Music validation passed for {key}.")
-            else:
-                logging.warning(f"❌ Music validation failed for {key}, skipping.")
+                # Define the file path for the generated music
+                music_path = os.path.join(MUSIC_DIR, f"music_{key}_{timestamp}.wav")
 
-        except Exception as e:
-            logging.error(f"Error generating {key} music: {e}")
-            music_clips[key] = None  # Store None for failed generations
+                # Save the generated music as a WAV file with a 32 kHz sample rate
+                wavfile.write(music_path, EXPECTED_SR, audio_array)
+
+                # Validate the generated music clip before adding it to the output list
+                if validate_music_clip(music_path):
+                    music_clips[key] = music_path
+                    logging.info(f"✅ Music validation passed for {key}.")
+                    break  # Exit retry loop on success
+                else:
+                    logging.warning(f"❌ Music validation failed for {key}, retrying...")
+
+            except Exception as e:
+                logging.error(f"Error generating {key} music: {e}")
+                if attempt < MAX_MUSIC_ATTEMPTS - 1:
+                    logging.info("Retrying music generation after a short delay...")
+                    time.sleep(2)  # Short delay before retrying
+
+        else:
+            # If all attempts fail, log the failure and store None
+            logging.error(f"Music generation failed after max attempts for {key}.")
+            music_clips[key] = None
 
     return music_clips
