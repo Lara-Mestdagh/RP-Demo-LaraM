@@ -54,11 +54,11 @@ This project is an AI-powered storytelling application that allows users to gene
 
 This application uses the following models:
 - **Llama 3.1 (Meta AI)**
-    License: /licenses/llama3_1_license.txt
+    [License](https://github.com/Lara-Mestdagh/RP-Demo-LaraM/blob/master/licenses/llama3_1_license.txt)
 - **MeloTTS (TTS)**
-    License: /licenses/melotts_license.txt
+    [License](https://github.com/Lara-Mestdagh/RP-Demo-LaraM/blob/master/licenses/melotts_license.txt)
 - **Facebook MusicGen (Meta AI)**
-    License: /licenses/musicgen_license.txt
+    [License](https://github.com/Lara-Mestdagh/RP-Demo-LaraM/blob/master/licenses/musicgen_license.txt)
 
 Important: While this project itself is fully open-source, users must adhere to the terms and conditions specified by these model licenses.
 
