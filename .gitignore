@@ -3,4 +3,5 @@
 generated
 tests
 .gradio
+doc
 __pycache__
